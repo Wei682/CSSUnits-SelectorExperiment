@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<title>CSS Units & Selector Experiment</title>
+</head>
+<body>
+	<h1> I am experimenting with advanced CSS selectors and V units.</h1>
+
+	<h2> 1. I am using the * selector, which sets all text to the font type 'DM Serif Display' and sets the box-sizing to border-box. </h2>
+
+	<h2> 2. Use <span> .step2Class1.step2Class2 </span> to select all elements that are both step2Class1 and step2Class2.</h2>
+	<p class = "step2Class1"> This paragraph belongs to step2Class1. </p>
+	<p class = "step2Class2"> This paragraph belongs to step2Class2. </p>
+	<p class = "step2Class1 step2Class2"> This paragraph belongs to both step2Class1 and step2Class2. Let's make the text color green. </p>
+
+	<h2> 3. Use <span> .step3Class1 .step3Class2 </span> to select all class 2 elements that are child elements of class 1 elements. Note that in this case, there is a space between the two classes, but in step 2 there's no space. No matter it is a direct child or indirect child, a background color will be added.</h2>
+	<div class = "step3Class1">
+		<p> This is a paragraph in a parent div class named "step3Class1". </p>
+	</div>
+	<div class = "step3Class1">
+		<div class = "step3Class3">
+			<div class = "step3Class2">
+				<p> This is a paragraph in a div class named "step3Class2". The "step3Class2" div is a child of the "step3Class3" div, and the "step3Class3" div is a child of the "step3Class1" div. Though this paragraph is not a direct child of "step3Class1", it will have a background color. </p>
+			</div>
+		</div>
+	</div>
+
+	<div class = "step3Class1">
+		<div class = "step3Class2">
+			<p> This is a paragraph in a div class named "step3Class2". The "step3Class2" div is a direct child of the "step3Class1" div. It will also have a background color. </p>
+		</div>
+	</div>
+
+	<h2> 4. Use <span> .step4Class1>.step4Class2 </span> to select all class 2 elements that are only the direct child elements of class 1 elements.</h2>
+	<div class = "step3Class1">
+		<p> This is a paragraph in a parent div class named "step4Class1". </p>
+	</div>
+	<div class = "step4Class1">
+		<div class = "step4Class3">
+			<div class = "step4Class2">
+				<p> This is a paragraph in a div class named "step4Class2". The "step4Class2" div is a child of the "step4Class3" div, and the "step4Class3" div is a child of the "step4Class1" div. This paragraph is not a direct child of "step4Class1", so it will not have a background color. </p>
+			</div>
+		</div>
+	</div>
+
+	<div class = "step4Class1">
+		<div class = "step4Class2">
+			<p> This is a paragraph in a div class named "step4Class2". The "step4Class2" div is a direct child of the "step4Class1" div. It will have a background color. </p>
+		</div>
+	</div>
+
+	<h2> 5. Use <span> .step5Class1, .step5Class2 </span> to select all step5Class1 and step5Class2 divs and add a yellow border.</h2>
+
+	<div class = "step5Class1">
+		<p> I am a step5Class1 div.</p>
+	</div>
+	<div class = "step5Class2">
+		<p> I am a step5Class2 div.</p>
+	</div>
+	<div class = "step5Class3">
+		<p> I am a step5Class3 div.</p>
+	</div>
+
+	<h2> 6. Use <span> a: hover </span> and <span> a: active</span> to explore the effects of links when hovering or clicking it.</h2>
+	<a href="https://www.nyu.edu/">Link to NYU Website</a>
+
+	<h2> 7. Use <span> p:first-child </span> to make the text color of all the p elements in this page grey if the p element is the first child element in each parent element.</h2>
+
+	<h2> 8. Experimenting with V-units! Creat a box using vh and vw, with 80% of the viewport width and 30% of the viewport height.</h2>
+	<div class = "step8Box">
+		<p> I love web dev! </p>
+	</div>
+
+	<h2> 9. Creat a box using vmin and vmax, set the width to be 50% of the larger dimension and the height to be 30% of the smaller dimension. </h2>
+	<div class = "step9Box">
+		<p> I love web dev! </p>
+	</div>
+
+	<h1> Experiment completed! </h2>
+
+</body>
+</html> 

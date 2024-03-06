@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+*{
+  font-family: "DM Serif Display", serif;
+  box-sizing: border-box;
+}
+
+p{
+	margin: 5px;
+}
+
+span{
+	color: red;
+}
+
+.step2Class1.step2Class2{
+	color: green;
+}
+
+.step3Class1 .step3Class2{
+	background-color: lightblue;
+}
+
+.step4Class1>.step4Class2{
+	background-color: lightpink;
+}
+
+.step5Class1,.step5Class2{
+	border: 2px solid #ffe600;
+}
+
+a{
+	text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    background-color: mediumpurple;
+}
+
+a:active {
+	text-decoration: underline;
+	color: white;
+}
+
+p:first-child{
+	color: grey;
+}
+
+.step8Box{
+	width: 80vw;
+	height: 30vh;
+	border: 2px solid lightblue;
+}
+
+.step9Box{
+	width: 50vmax;
+	height: 30vmin;
+	border: 2px solid lightpink;
+}
